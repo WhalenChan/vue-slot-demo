@@ -1,7 +1,7 @@
 <template>
     <div class="father">
         <h3>这里是父组件</h3>
-        <child>
+        <child parentToChildParam="这是从父组件Slot1.vue传过来的值！">
             <div class="tmpl">
               <span>菜单1</span>
               <span>菜单2</span>

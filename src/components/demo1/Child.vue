@@ -1,15 +1,20 @@
 <template>
     <div class="child">
         <h3>这里是子组件</h3>
+        <h4>{{ parentToChildParam }}</h4>
+        <h4>{{ msg }}</h4>
         <slot></slot>
     </div>
 </template>
 
 <script>
 export default {
+    props: {
+        parentToChildParam: String
+    },
     data: function(){
         return {
-            msg: ''
+            msg: '嘿嘿VUE!'
         }
     },
     computed: {
